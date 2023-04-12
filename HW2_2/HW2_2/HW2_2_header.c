@@ -1,5 +1,5 @@
 ﻿#include <stdio.h>
-#include <stdbool.h>
+#include <stdbool.h> //True / False 값을 가지는 Boolean 자료형을 return하기 위한 헤더
 
 int LCM(int a, int b) { //Least Common Multiple, 최소공배수, 정수 a, b를 parameter로 입력받는 함수
 	int lcm;
@@ -77,7 +77,7 @@ int GCD_scan(void) { //Greatest Common Devisor, 최대공약수, scanf_s로 정�
 	return gcd;
 }
 
-_Bool Prime(int a) { //Prime Number, 소수 판별 함수, 정수 a를 parameter로 입력받는 함수
+_Bool Prime(int a) { //Prime Number, 소수 판별 함수, 정수 a를 parameter로 입력받는 함수, True / False를 반환해야 하므로 _Bool 자료형
 	int num;
 	for (int i = 2; i <= a; i++) {
 		if (a % i == 0) {
@@ -97,7 +97,7 @@ _Bool Prime(int a) { //Prime Number, 소수 판별 함수, 정수 a를 parameter
 	}
 }
 
-_Bool Prime_scan(void) { //Prime Number, 소수 판별 함수, scanf_s로 정수 a를 입력받는 함수
+_Bool Prime_scan(void) { //Prime Number, 소수 판별 함수, scanf_s로 정수 a를 입력받는 함수, True / False를 반환해야 하므로 _Bool 자료형
 	int a, num;
 
 	printf("Enter a number to determine if it is a prime number : ");
